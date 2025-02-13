@@ -14,14 +14,12 @@ html,body{
 }
 nav {
     background-color: rgb(9, 45, 51); 
-    /* background-color: rgb(23, 23, 53); */
     color: white;
     padding: 15px;
-    /* text-align: right; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     justify-content: space-between;
 
@@ -58,22 +56,13 @@ nav {
     /* border: 1px solid black; */
 
 }
-/* #home{
-    align-content: center;
-    padding:  110px 100px ;
-    color:white;
-    /* background-color:#051915 ; */
-     /* background-color: (--splashscreen-startup-background) */
-     /* background-color: #111b21; */
-     /* padding-top: 90px; */
-    
+
     
 
 
 .social-icons {
     display: flex;
     gap: 30px;
-    /* border: 1px solid black; */
     margin-left: 45px;
     justify-content: center;
     
@@ -202,10 +191,14 @@ nav {
 }
 .box{
     
-    padding :50px 100px;
+    /* padding :50px 100px; */
     box-shadow:  10px 5px 10px 5px rgb(34, 135, 153);
     /* display: flex;
     flex-wrap: wrap; */
+    padding: 50px;
+    /* justify-content: center; */
+
+    
 }
 .box>h3{
     font-size: 35px;
@@ -217,9 +210,11 @@ nav {
     font-weight: 300;
 }
 .box>p{
+    
     font-size: 18px;
     padding-bottom: 20px;
-    
+    /* text-align: center; */
+    /* justify-content: center; */
 }
 .box>button{
     font-size: 18px;
@@ -267,31 +262,29 @@ nav {
 .project{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* gap:90px; */
-    /* margin: 20px; */
-    padding: 20px;
+    margin: 20px 0px;
+    padding: 0px 20px;
     box-shadow:  10px 5px 10px 5px rgb(34, 135, 153);
     justify-content: space-between;
+    /* width: 100%; */
 
 } 
-.left{
-    width: 50%;
-    /* box-shadow:  10px 5px 10px 5px rgb(34, 135, 153); */
-}
+
 .left>h3{
     text-align: left;
     padding: 20px;
 }
 .left>p{
-    padding-left: 20px;
-    padding-bottom: 20px;
+   
+    padding: 20px;
 }
 .right{
-    /* width: 40%; */
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
+
 }
 .right>img{
     width: 400px;
@@ -303,18 +296,8 @@ nav {
 
 
 }
-.right>img:hover{
-    /* transform: scale(1.4); */
-    width: 450px;
-    /* height:300px ; */
-}
+
 #contact{
-    /* display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
-    /* gap: 30px; 
-    padding-bottom: 60px;
-     */
      text-align: center;
      display: flex;
      flex-direction: column;
@@ -325,7 +308,6 @@ nav {
 #contact>ul{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     padding: 20px 80px;
     margin: 0px 50px;
     list-style: none;
@@ -418,31 +400,7 @@ nav {
     font-size: 20px;
 }
 /* here */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
 
-body {
-    background-color: #f8f8f8;
-} */
-
-/* Navbar Styles */
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 15px 20px;
-    color: white;
-}
-
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-} */
 
 /* Hamburger Icon */
 .hamburger {
