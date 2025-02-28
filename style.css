@@ -7,7 +7,7 @@
 }
 html,body{
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     background-color: #111b21;
     color: white;
 
@@ -41,7 +41,6 @@ nav {
     justify-content: space-around;
     flex-wrap: wrap;
     gap:20px
-    /* border: 1px solid black; */
 
 }  
 /* .nav-link:hover {
@@ -87,22 +86,11 @@ nav {
     height: 500px;
     border-radius: 50%;
 }
-/* .content{
-    border: 1px solid black; 
-    display: flex;
-    flex-direction: row;
-    margin:  50px 100px ;
-    /* background-color:#148f77 ; 
-    border-radius: 20px;
-    box-shadow: 5px 15px 5px grey;
-    background-color: rgb(224, 209, 238);
-    
-    
-} */
+
  .circle{
     
     height: 480px;
-    width: 480px;
+    max-width: 480px;
     margin: auto;
     border-radius: 50%;
     text-align: center;
@@ -145,7 +133,7 @@ nav {
     font-size: 20px;
     
 } 
-.hire-btn{
+/* .hire-btn{
     font-size: 20px;
     padding: 5px 20px;
     margin-top: 20px;
@@ -159,7 +147,7 @@ nav {
     font-size: 25px;
     color:rgb(34, 135, 153);
     background-color: white;
-}
+} */
 
 .name:hover{
     font-size: 40px;
@@ -182,7 +170,7 @@ nav {
 }
 .pic-div>img{
     height: 300px;
-    width: 300px;
+    max-width: 300px;
     border-radius: 50%;
 }
 .pic-div>p{
@@ -191,13 +179,8 @@ nav {
 }
 .box{
     
-    /* padding :50px 100px; */
     box-shadow:  10px 5px 10px 5px rgb(34, 135, 153);
-    /* display: flex;
-    flex-wrap: wrap; */
-    padding: 50px;
-    /* justify-content: center; */
-
+    padding: 20px 30px;
     
 }
 .box>h3{
@@ -213,8 +196,7 @@ nav {
     
     font-size: 18px;
     padding-bottom: 20px;
-    /* text-align: center; */
-    /* justify-content: center; */
+    text-align: justify;
 }
 .box>button{
     font-size: 18px;
@@ -227,9 +209,7 @@ nav {
 }
 
 #skills{
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr); */
-    gap: 20px;
+    /* gap: 20px; */
     text-align: center;
     box-shadow:  10px 5px 10px 5px rgb(34, 135, 153);
     margin: 20px 40px;
@@ -263,7 +243,7 @@ nav {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    /* gap:90px; */
+    gap:30px;
     margin: 20px 0px;
     padding: 0px 20px;
     box-shadow:  10px 5px 10px 5px rgb(34, 135, 153);
@@ -279,6 +259,7 @@ nav {
 .left>p{
    
     padding: 20px;
+    text-align: justify;
 }
 .right{
     text-align: center;
@@ -287,7 +268,7 @@ nav {
 
 }
 .right>img{
-    width: 400px;
+    max-width: 300px;
     height: 200px;
     border-radius: 10px;
     object-fit: cover;
@@ -469,7 +450,7 @@ nav {
 
 
 } */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
     }
@@ -477,7 +458,7 @@ nav {
     .nav-links {
         display: none;
         flex-direction: column;
-        /* background: #333; */
+        /* background: #333; 
         background:   rgb(9, 45, 51); ;
         position: absolute;
         top: 60px;
@@ -513,4 +494,71 @@ nav {
         grid-template-columns: repeat(1,1fr);
     }
     
-}
+} */
+ /* For tablets */
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    /* .container {
+      flex-direction: column;
+    } */
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background:   rgb(9, 45, 51); ;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        max-width: 760px;
+    }
+    .pic-div{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    nav,#home{
+        max-width: 480px;
+
+    }
+
+    
+    .hamburger{
+        display: block;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        width: 425px;
+    }
+   
+  }
+  
